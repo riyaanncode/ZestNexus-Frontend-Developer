@@ -54,10 +54,10 @@ const SignupForm = () => {
 
             {/* Truck icon */}
             <div
-              className="absolute -top-2.5 [text-[#00666C]] transition-all duration-300"
+              className="absolute top-[-17px] [text-[#00666C]] transition-all duration-300"
               style={{ left: `calc(${progress}% - 10px)` }}
             >
-              <i className="ri-truck-fill text-lg" />
+               <i class="ri-truck-fill text-lg text-[#225c85] mt-[6px] text-[27px] "></i>
             </div>
           </div>
         </div>

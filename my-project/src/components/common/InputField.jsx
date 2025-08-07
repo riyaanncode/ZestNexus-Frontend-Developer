@@ -1,30 +1,23 @@
-import React from 'react';
-
 const InputField = ({
-  label,
+  type,
   name,
   placeholder,
-  type = 'text',
   register,
-  required = false,
-  className = '',
-  disabled = false,
+  required,
   value,
+  disabled,
 }) => {
   return (
-    <div className="">
-      {label && <label htmlFor={name} className="mb-1 font-medium text-sm">{label}</label>}
-      <input
-        id={name}
-        type={type}
-        placeholder={placeholder}
-        className={`border p-3 rounded-md outline-blue-500 ${className}`}
-        {...register(name, { required })}
-        disabled={disabled}
-        value={value}
-        readOnly={!!value}
-      />
-    </div>
+    <input
+      className="border border-gray-300  p-[10px]"
+      type={type}
+      placeholder={placeholder}
+      {...register}
+      name={name}
+      required={required}
+      value={value}
+      disabled={disabled}
+    />
   );
 };
 
